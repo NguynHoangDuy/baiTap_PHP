@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Registration</h2>
+    <form action="./checkPass.php" method="post">
+        <div class="form-row">
+            <div class="form-item">
+                <label for="">Full Name</label>
+                <input type="text">
+            </div>
+            <div class="form-item">
+                <label for="">User Name</label>
+                <input type="text" name="name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-item">
+                <label for="">Email</label>
+                <input type="text" name="email">
+            </div>
+            <div class="form-item">
+                <label for="">Phone Number</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-item">
+                <label for="">Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-item">
+                <label for="">Confirm Password</label>
+                <input type="password" name="Confirm-password">
+            </div>
+        </div>
+        <p>Gender</p>
+        <div class="form-row">
+            <input type="radio">
+            <label for="">Male</label>
+            <input type="radio">
+            <label for="">FeMale</label>
+            <input type="radio">
+            <label for="">Not to say</label>
+        </div>
+        <div class="form-row">
+            <button type="submit">Rergister</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+form{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.form-row{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+.form-item{
+    width: 50%;
+    margin-right: 20px;
+}
+.form-item > label{
+    display: block;
+}
+.form-item > input {
+    width: 100%;
+}
