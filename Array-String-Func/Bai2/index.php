@@ -10,21 +10,21 @@
     <?php
         if(isset($_POST["submit"]))
         {
-            $tich = 1;
+            $tong = 0;
             $stringNum = $_POST["stringNum"];
             $stringTrim = trim($stringNum);
 
             $arrStr = explode(",", $stringTrim);
             foreach($arrStr as $value)
             {
-                $tich = $tich * $value;
+                $tong = $tong + $value;
             }
         }
     ?>
     <form action="" method="post">
         <table align="center">
             <tr>
-                <td colspan="2" style="text-align:center;">Tính tích</td>
+                <td colspan="2" style="text-align:center;">Nhập và tính trên dãy số</td>
             </tr>
             <tr>
                 <td>Dãy số:</td>
@@ -36,7 +36,7 @@
             </tr>
             <tr>
                 <td>Kết quả:</td>
-                <td><input type="text" value="<?php if(isset($tich)) echo $tich; else echo "";?>" disabled></td>
+                <td><input type="text" value="<?php if(isset($tong)) echo $tong; else echo "";?>" disabled></td>
             </tr>
         </table>
     </form>
